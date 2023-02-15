@@ -5,4 +5,15 @@ def amount(A, S):
     result = []
     # initialize the combination list to store the current combination
     combination = []
-  
+    
+    for i in range(len(A)):
+        if i > 0 and A[i] == A[i - 1]:
+            continue 
+        
+    combination.append(A[i])
+
+    target = S - A[i]
+
+    if target == 0: 
+        result.append(list(combination)) #appends the target to the list 
+        
