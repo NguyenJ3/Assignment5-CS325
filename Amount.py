@@ -16,4 +16,9 @@ def amount(A, S):
 
     if target == 0: 
         result.append(list(combination)) #appends the target to the list 
-        
+    elif target > 0: 
+        pass 
+    else: 
+        break 
+    combination.pop()
+    
